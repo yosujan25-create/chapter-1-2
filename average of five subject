@@ -1,0 +1,24 @@
+class Student:
+    def __init__(self, name, p1, p2, p3, p4, p5):
+        self.name = name
+        self.m1 = p1
+        self.m2 = p2
+        self.m3 = p3
+        self.m4 = p4
+        self.m5 = p5
+
+    def average(self):
+        self.avg = (self.p1 + self.p2 + self.p3 +
+                    self.p4 + self.p5) / 5
+        print("Average =", self.avg)
+
+    def result(self):
+        if self.avg >= 50:
+            print("Pass")
+        else:
+            print("Fail")
+
+s = Student("Sujan", 60, 40, 70, 80, 50)
+
+s.average()
+s.result()
